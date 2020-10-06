@@ -1,0 +1,32 @@
+<button type="button" class="btn btn-info float-left ml-5" (click)="Addform()">Add Task</button>
+<button type="button" class="btn btn-info float-right mr-5" (click)="logout()">Logout</button>
+<div class="container pt-4 mt-4">
+    <div class="card">
+        <h5 class="card-header center">Details of Taskapp</h5>
+        <div class="card-body">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Sno.</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let p of obj1"> -->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{title}}</td>
+                        <td>{{description}}</td>
+                        <td>{{priority}}</td>
+                        <td><button type="submit" class="btn btn-primary badge badge-pill badge-primary" (click)="deleteTask()">Delete</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

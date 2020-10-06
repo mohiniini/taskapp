@@ -1,0 +1,30 @@
+<div>
+    <div class="bgimg">
+        <div class="centerdiv">
+
+            <h2>User Login</h2><br><br>
+            <form>
+                <div>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="name1" [(ngModel)]="Name" aria-describedby="emailHelp" placeholder="Enter name" class="inputbox">
+                </div>
+
+                <br>
+                <div>
+                    <input type="email" class="form-control" id="exampleInputEmail2" name="email" [(ngModel)]="Email" aria-describedby="emailHelp" placeholder="Enter email" class="inputbox">
+                </div>
+                <br>
+                <div>
+                    <input type="password" class="form-control" id="exampleInputEmail3" name="password" [(ngModel)]="Password" aria-describedby="emailHelp" placeholder="Enter password" class="inputbox">
+                </div>
+
+                <br>
+                <button type="button" (click)="loginfn()">LOGIN</button>
+            </form>
+            <div class="text">
+                <a [routerLink]="['/register']">Create new account</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
